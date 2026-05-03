@@ -52,9 +52,9 @@ This reduces the search complexity dramatically.
 
 ---
 
-### 🐾 Final Screen Example — Animals
+### 🚜 Final Screen Example — Vehicles
 
-![Animals](img/telafinalanimal.png)
+![Vehicles](img/telafinaltrator.png)
 
 ---
 
@@ -64,11 +64,13 @@ This reduces the search complexity dramatically.
 
 ---
 
-### 🚜 Final Screen Example — Vehicles
+### 🐾 Final Screen Example — Animals
 
-![Vehicles](img/telafinaltrator.png)
+![Animals](img/telafinalanimal.png)
 
 ---
+
+
 
 ## ⚙️ Features
 
