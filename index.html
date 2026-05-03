@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emoji Fácil</title>
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+<div class="topo_linha">
+<img id="band_idioma" src="band_pt.jpg" class="band">
+<h1 id="txt_title">EFU - Emoji Fácil Ulianov</h1>
+<button class="btn_cfg" onclick="abrir_config()">⚙️</button>
+</div>    
+<h1 id="txt_title2">The easiest emoji keyboard in the world</h1>
+
+<div class="layout_3col">
+
+<div class="side left">
+<div class="sponsor_box">
+<div class="sponsor_title">Supported by</div>
+<a href="https://amtkenergia.com.br/" target="_blank">
+<img src="amtk.png" class="sponsor_logo">
+</a>
+</div>
+</div>
+
+<div class="center">
+
+<div class="kb_ctrl">
+<button onclick="kb_ctrl0()"></button>
+<button onclick="kb_ctrl1()"></button>
+<button onclick="kb_ctrl2()"></button>
+<button onclick="kb_ctrl3()"></button>
+<button onclick="kb_ctrl4()"></button>
+</div>             <!-- Final do kb_ctrl -->
+
+<div id="teclado" class="teclado">
+<div class="kb_area" id="kb_area">
+</div>             <!-- Final do kb_area -->
+</div>             <!-- Final do teclado -->
+
+    
+<div class="editor"> <!-- Inicio do editor -->
+
+<div class="kb_normal">
+<button id="btn_copy" onclick="copiar_texto()">Copy 📤</button>
+<button id="btn_paste" onclick="colar_texto()">Paste 📋</button>
+<button id="btn_clear" onclick="limpar_texto()">Clear ❌</button>
+<button id="btn_liu" onclick="aplica_LIU()">🙂LIU</button>
+</div>               <!-- Final dos botoes -->
+
+<textarea id="liu_input" placeholder=""></textarea>
+
+</div>               <!-- Final do editor -->
+
+
+<div class="kb_extra">
+<button onclick="kb_backspace()">BackSpace</button>
+<button onclick="kb_cursor_left()">◀</button>
+<button onclick="kb_space()">SPACE</button>
+<button onclick="kb_cursor_right()">▶</button>
+<button onclick="kb_clear()">Delete</button>
+</div>             <!-- Final do kb_extra -->
+
+</div>             <!-- Final do center -->
+
+<div class="side right">
+<div class="sponsor_box">
+<div class="sponsor_title">Supported by</div>
+<a href="https://www.equalix.com.br/" target="_blank">
+<img src="equalix.png" class="sponsor_logo">
+</a>
+</div>
+</div>
+
+</div>
+<div id="config_panel" class="config_panel hidden">
+<div class="config_box">
+<h2 id="cfg_title">EFU Configuration</h2>
+<label id="cfg_lbl_language">Language:</label>
+<select id="cfg_idioma" onchange="on_idioma_config_change()">
+<option>Deutsch</option>
+<option>English</option>
+<option>Español</option>
+<option>Français</option>
+<option>Italiano</option>
+<option>Português</option>
+<option>Русский</option>
+<option>中文</option>
+<option>日本語</option>
+</select>
+<label id="cfg_lbl_skin">Emoji skin tone:</label>
+<select id="cfg_skin">
+<option value="0">🖐 🦶 👂</option>
+<option value="1">🖐🏻 🦶🏻 👂🏻</option>
+<option value="2">🖐🏼 🦶🏼 👂🏼</option>
+<option value="3">🖐🏽 🦶🏽 👂🏽</option>
+<option value="4">🖐🏾 🦶🏾 👂🏾</option>
+<option value="5">🖐🏿 🦶🏿 👂🏿</option>
+</select>
+<label id="cfg_lbl_font">Keyboard size:</label>
+<select id="cfg_font">
+<option value="small">Small</option>
+<option value="normal">Normal</option>
+<option value="large">Large</option>
+</select>
+<div class="cfg_line"><span id="cfg_lbl_op4">Keep last text when opening</span><input id="cfg_op4" type="checkbox"></div>
+<div class="cfg_line"><span id="cfg_lbl_save_hist">Save emoji memory on this device</span><input id="cfg_save_hist" type="checkbox"></div>
+<div class="cfg_line"><span id="cfg_lbl_save_fix">Do not change the fix button</span><input id="cfg_save_fix" type="checkbox"></div>
+<button id="cfg_btn_save" class="cfg_save" onclick="salvar_config_fechar()">SAVE</button>
+</div>
+</div>
+
+<div class="rodape">
+<span id="txt_made">Made by Policarpo Yoshin Ulianov</span> · 
+<a id="txt_help" href="help.html">Help</a> · 
+<a id="txt_support" href="support.html">Support</a>
+</div>
+<script src="appemojifacil.js?v=5"></script>
+</body>
+</html>
